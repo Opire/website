@@ -1,0 +1,69 @@
+.userCommentCard {
+  /* position: absolute; */
+  width: 283px;
+  padding: 16px 20px 16px 20px;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px;
+  opacity: 0px;
+  background: #1a1a1ab2;
+  border: 1px solid #575757;
+  box-shadow: 0px 0px 25px 0px #ffffff59;
+  overflow: visible;
+}
+
+.userCommentCardHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.userCommentCardComment {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.userCommentCardButtonsFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.userCommentCardSkipButton {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.UserCommentCardLearnMoreButton {
+  background: #1a1a1a;
+  padding: 6px 10px 6px 10px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0px;
+  border: 1px solid #3a3a3a;
+  color: #92beba;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.UserCommentCardArrow {
+  position: absolute;
+  width: 20.78px;
+  height: 24px;
+  gap: 0px;
+  right: -18px;
+  top: 42%;
+}

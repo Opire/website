@@ -1,0 +1,84 @@
+.howDoesItWork {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 144px 120px 144px;
+  opacity: 0px;
+}
+
+.howDoesItWorkEclipse {
+  position: absolute;
+  width: 70%;
+  height: 450px;
+  top: 350px;
+  gap: 0px;
+  opacity: 0.6px;
+  background: #ffb163;
+  filter: blur(500px);
+  scale: 0.7;
+  border-radius: 100%;
+}
+
+.howDoesItWorkTitle {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 49.3px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.howDoesItWorkTitleSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.howDoesItWorkContentSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  place-items: center;
+  gap: 48px;
+}
+
+.howDoesItWorkContent1,
+.howDoesItWorkContent2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 550px;
+}
+.howDoesItWorkContent1 > h2,
+.howDoesItWorkContent2 > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 39.6px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #e8e8e8;
+}
+.howDoesItWorkContent1 > p,
+.howDoesItWorkContent2 > p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+}
+
+.howDoesItWorkContent1 {
+  margin-right: 350px;
+}
+.howDoesItWorkContent2 {
+  margin-left: 350px;
+}

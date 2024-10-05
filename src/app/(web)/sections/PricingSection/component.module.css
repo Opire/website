@@ -1,0 +1,78 @@
+.pricing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 144px 120px 144px;
+  gap: 60px;
+}
+
+.pricingTitle {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  max-width: 800px;
+  margin: 0;
+}
+.pricingSubtitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  margin: 0;
+}
+
+.pricingSubtitleSmall {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.pricingTitleSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  gap: 32px;
+}
+
+.pricingSubtitleSection {
+  width: 100%;
+  padding: 40px 40px 60px 40px;
+  gap: 32px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  gap: 0;
+  background: linear-gradient(180deg, #222224 0%, rgba(34, 34, 36, 0) 100%);
+}
+
+.pricingContentSection {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  place-items: start;
+  gap: 24px;
+}
+
+.pricingEclipse {
+  position: absolute;
+  top: 1000px;
+  width: 408px;
+  height: 207px;
+  gap: 0px;
+  background: #ffb163;
+  filter: blur(250px);
+}

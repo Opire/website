@@ -1,0 +1,193 @@
+.pricingCard {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  gap: 32px;
+  border-radius: 8px;
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    180deg,
+    #1e9387 0%,
+    rgba(30, 147, 135, 0) 100%
+  );
+
+  border-style: inset;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 147, 135, 0.2) 0%,
+    rgba(30, 147, 135, 0) 100%
+  );
+}
+
+.pricingCardLightPlan {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  height: 90%;
+  padding: 40px;
+  gap: 32px;
+  border-radius: 8px;
+  border: 1px solid #ffffff1a;
+
+  border-image: linear-gradient(to bottom, #ffffff, #ffffff00);
+  border-style: inset;
+  background: linear-gradient(180deg, #222224 0%, rgba(34, 34, 36, 0) 100%);
+  margin-top: 1rem;
+}
+
+.pricingCardStartSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 18px;
+}
+
+.pricingCardSeparator {
+  width: 100%;
+  border: 1px solid #ffffff26;
+}
+
+.pricingCardPricesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pricingCardName {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin: 0;
+  color: #a7a7a7;
+}
+.pricingCardOldPrice {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin: 0;
+  text-decoration: line-through;
+  color: #ffffff;
+}
+.pricingCardOldPrice > span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+}
+.pricingCardPrice {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+.pricingCardDescription {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.8px;
+  text-align: center;
+}
+
+.pricingCardProgrammingLang {
+  display: flex;
+  place-items: center;
+  text-align: center;
+  height: 20px;
+  padding: 0px 8px 0px 8px;
+  gap: 7px;
+  border-radius: 99px;
+  border: 1px solid #1e9387;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #92beba;
+}
+
+.pricingCardChips {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pricingCardAvailableCommands {
+  display: flex;
+  place-items: center;
+  text-align: center;
+  height: 20px;
+  padding: 0px 8px 0px 8px;
+  border-radius: 99px;
+  border: 1px solid #ff9b37;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #ff9b37;
+}
+
+.pricingCardLogo {
+  object-fit: contain;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+.pricingCardFeatures {
+  display: flex;
+  flex-direction: column;
+  place-items: start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pricingCardFeature {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #c0c0c0;
+}
+
+.pricingCardButton {
+  width: 100%;
+  height: 64px;
+  padding: 20px 34px 20px 34px;
+  gap: 12px;
+  border-radius: 99px;
+  border: 1px;
+  opacity: 0px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: white;
+}
+.pricingCardButtonPro {
+  width: 100%;
+  height: 64px;
+  padding: 20px 34px 20px 34px;
+  gap: 7px;
+  border-radius: 99px;
+  opacity: 0px;
+  background: #1e9387;
+  color: white;
+}

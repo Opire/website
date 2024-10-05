@@ -1,0 +1,98 @@
+.whoIsItFor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 144px 120px 144px;
+  opacity: 0px;
+}
+
+.whoIsItForEclipse {
+  position: absolute;
+  width: 706px;
+  height: 363px;
+  top: 0px;
+  gap: 0px;
+  opacity: 0.6px;
+  background: #ffb163;
+  filter: blur(290px);
+  scale: 0.7;
+  border-radius: 100%;
+}
+
+.whoIsItForTitle {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52.8px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.whoIsItForTitle > span {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52.8px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #4fa89f;
+}
+
+.whoIsItForTitleSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.whoIsItForContentSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.whoIsItForContentDescriptionsItems {
+  display: flex;
+  flex-direction: row;
+  max-width: 520px;
+  gap: 24px;
+  place-items: start;
+  justify-content: center;
+}
+.whoIsItForContentDescriptionsItems > svg {
+  scale: 2;
+}
+
+.whoIsItForContentDescriptionsItemsTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+.whoIsItForContentDescriptionsItemsTexts > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.699999988079071px;
+  text-align: left;
+  margin: 0;
+}
+.whoIsItForContentDescriptionsItemsTexts > h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35.28px;
+  text-align: left;
+  color: #e8e8e8;
+}
+
+.whoIsItForContentDescriptionsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
