@@ -75,4 +75,5 @@
   gap: 0px;
   background: #ffb163;
   filter: blur(250px);
+  pointer-events: none;
 }

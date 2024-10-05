@@ -128,3 +128,43 @@
   width: 16px;
   height: 16px;
 }
+
+/* .faqContentCategoryRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  position: relative;
+
+  width: fit-content;
+  padding: 5px;
+}
+
+.faqContentCategoryItem {
+  padding: 7px 12px;
+  line-height: 1;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-2));
+  border-radius: var(--mantine-radius-md);
+  font-size: var(--mantine-font-size-sm);
+  transition: color 100ms ease;
+  font-weight: 500;
+
+  @mixin hover {
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    background-color: light-dark(
+      var(--mantine-color-gray-1),
+      var(--mantine-color-dark-7)
+    );
+  }
+
+  &[data-active] {
+    color: var(--mantine-color-white);
+  }
+}
+
+.faqContentCategoryIndicator {
+  background-color: #ff972f;
+
+  width: 48px;
+  height: 4px;
+} */

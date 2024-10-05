@@ -126,4 +126,5 @@
   gap: 0px;
   scale: 1;
   opacity: 0px;
+  pointer-events: none;
 }

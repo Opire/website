@@ -21,6 +21,7 @@
   filter: blur(290px);
   scale: 0.7;
   border-radius: 100%;
+  pointer-events: none;
 }
 
 .whoIsItForTitle {

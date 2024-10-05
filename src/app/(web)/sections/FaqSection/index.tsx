@@ -1,11 +1,45 @@
 "use client";
 
-import { Accordion, CloseButton, Group, Input } from "@mantine/core";
+import {
+  Accordion,
+  CloseButton,
+  Flex,
+  FloatingIndicator,
+  Group,
+  Input,
+  SegmentedControl,
+  UnstyledButton,
+} from "@mantine/core";
 import classes from "./component.module.css";
 import { useState } from "react";
 
+// const data = ["General", "Payments", "Bounties", "Tips", "Pricing"];
+
 export default function FaqSection() {
   const [searchValue, setSearchValue] = useState("");
+
+  // const [rootRef, setRootRef] = useState<HTMLDivElement | null>(null);
+  // const [controlsRefs, setControlsRefs] = useState<
+  //   Record<string, HTMLButtonElement | null>
+  // >({});
+  // const [activeCategory, setActiveCategory] = useState(0);
+
+  // const setControlRef = (index: number) => (node: HTMLButtonElement) => {
+  //   controlsRefs[index] = node;
+  //   setControlsRefs(controlsRefs);
+  // };
+
+  // const controls = data.map((item, index) => (
+  //   <UnstyledButton
+  //     key={item}
+  //     className={classes.faqContentCategoryItem}
+  //     ref={setControlRef(index)}
+  //     onClick={() => setActiveCategory(index)}
+  //     mod={{ active: activeCategory === index }}
+  //   >
+  //     <span className={classes.controlLabel}>{item}</span>
+  //   </UnstyledButton>
+  // ));
 
   const faqs = [
     {
@@ -77,7 +111,16 @@ export default function FaqSection() {
         />
       </Group>
       <Group className={classes.faqContentSection}>
-        <div></div>
+        {/* <Flex className={classes.faqContentCategoryRoot} ref={setRootRef}>
+          {controls}
+
+          <FloatingIndicator
+            target={controlsRefs[activeCategory]}
+            parent={rootRef}
+            className={classes.faqContentCategoryIndicator}
+          />
+        </Flex> */}
+
         <Accordion
           variant="separated"
           transitionDuration={500}
