@@ -1,0 +1,49 @@
+.feedbackCard {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 24px 24px 24px 4px;
+  opacity: 0px;
+  background: #202020;
+  border: 1px solid #ffffff1a;
+  gap: 32px;
+}
+
+.feedbackCardUser {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.feedbackCardComment {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.feedbackCardUserFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feedbackCardUserFlex > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.feedbackCardUserFlex > small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #a7a7a7;
+  margin: 0;
+  padding: 0;
+}

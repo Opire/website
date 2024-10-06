@@ -1,0 +1,21 @@
+.featuredRewards {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0px 64px 0px;
+  margin: 0;
+
+  width: 100%;
+}
+
+.featuredRewardsTitle {
+  display: flex;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+  text-align: center;
+  color: #ffffff99;
+  text-align: center;
+  place-items: center;
+  justify-content: center;
+}
