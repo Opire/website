@@ -30,9 +30,9 @@ export function HeaderDesktop() {
                 <Link className={styles.link} href="/home#faq">
                     FAQS
                 </Link>
-                {/* <Link className={styles.link} href="/blog">
+                <Link className={styles.link} href="https://dev.to/opire" target="_blank" >
                     BLOG
-                </Link> */}
+                </Link>
             </nav>
 
             <div className={styles.ctas}>

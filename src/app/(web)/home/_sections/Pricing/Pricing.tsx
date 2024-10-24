@@ -28,6 +28,8 @@ export default function Pricing() {
             <br />
             <br />
             For those seeking more, we offer subscription plans for organizations and individuals to unlock additional features.
+            <br />
+            You can purchase your preferred plan in your Opire settings.
           </small>
         </Group>
 
