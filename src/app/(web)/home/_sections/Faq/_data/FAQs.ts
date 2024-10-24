@@ -95,6 +95,15 @@ const paymentsFaqs: Faq[] = [
     },
     {
         id: "2",
+        question: "Can I pay through another platform?",
+        answer: `
+            At Opire, we understand that everyone has their preferred way of receiving payments, so we don’t penalize anyone for making payments outside of Opire.
+            <br/><br/>
+            For those who want a secure and seamless option, we suggest using Stripe from Opire to ensure peace of mind.
+        `,
+    },
+    {
+        id: "3",
         question: "What if I don't get paid for the bounty?",
         answer: `
             If you find yourself in that situation, we're sorry for what happened 💔
@@ -105,7 +114,7 @@ const paymentsFaqs: Faq[] = [
         `,
     },
     {
-        id: "3",
+        id: "4",
         question: "What happens to my money if Opire disappears?",
         answer: `
             You wouldn't lose a single cent.
@@ -118,7 +127,7 @@ const paymentsFaqs: Faq[] = [
         `,
     },
     {
-        id: "4",
+        id: "5",
         question: "When do I receive my payment?",
         answer: `
             Once the bounty creator initiates the payment, the funds will be transferred to your Stripe account within 1 to 7 days, depending on the chosen payment method.
