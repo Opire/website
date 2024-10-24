@@ -14,7 +14,7 @@ export function VideoModal({
                 opened={isOpen}
                 onClose={onClose}
                 withCloseButton={false}
-                size={"50%"}
+                size={"80%"}
                 padding={0}
                 centered
                 transitionProps={{
