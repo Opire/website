@@ -1,6 +1,17 @@
-.path-arrow-icon {
-  width: 310px;
+.icon {
+  width: 150px;
   height: auto;
+
+  @media (min-width: 700px) {
+    width: 250px;
+  }
+
+  @media (min-width: 900px) {
+    width: 300px;
+  }
+}
+
+.icon--right {
   transform: rotate(60deg);
 
   @media (min-width: 700px) {
@@ -9,5 +20,18 @@
 
   @media (min-width: 900px) {
     transform: rotate(20deg);
+  }
+}
+
+.icon--left {
+  transform: rotate(-60deg) scale(-1, 1);
+
+
+  @media (min-width: 700px) {
+    transform: rotate(-40deg) scale(-1, 1);
+  }
+
+  @media (min-width: 900px) {
+    transform: rotate(-20deg) scale(-1, 1);
   }
 }

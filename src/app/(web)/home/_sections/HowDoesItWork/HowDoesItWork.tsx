@@ -1,10 +1,8 @@
-import { Image } from "@mantine/core";
 import styles from "./styles.module.css";
-import clsx from "clsx";
-import NextImage from "next/image";
 import Step1 from '../../../../../../public/assets/illustrations/step-1.svg'
 import Step2 from '../../../../../../public/assets/illustrations/step-2.svg'
 import PathArrow from "./_components/PathArrow/PathArrow";
+import Step from "./_components/Step/Step";
 
 export default function HowDoesItWork() {
   return (
@@ -14,26 +12,43 @@ export default function HowDoesItWork() {
         <h1 className={styles.title}>How Does It Work?</h1>
       </div>
       <div className={styles.steps}>
-        <div className={clsx(styles.step, styles.step1)}>
-          <Image component={NextImage} src={Step1} alt="step 1" className={styles["step-icon"]} />
-          <h2 className={styles["step-title"]}>Find a project you want to improve</h2>
-          <p className={styles["step-description"]}>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium.
-          </p>
-        </div>
+        <Step
+          title="Find an issue you want to see solved"
+          description="Browse through the open issues and find the ones you want to see solved. Choose the issues that fit your needs or interests."
+          stepNumber={1}
+          icon={Step1}
+          position="left"
+        />
 
-        <PathArrow />
+        <PathArrow direction="right" />
 
-        <div className={clsx(styles.step, styles.step2)}>
-          <Image component={NextImage} src={Step2} alt="step 2" className={styles["step-icon"]} />
+        <Step
+          title="Create a bounty for that issue"
+          description="Set a bounty to attract developers to tackle the issue. If someone already set a bounty, you can add more funds to increase the reward."
+          stepNumber={2}
+          icon={Step2}
+          position="right"
+        />
 
-          <h2 className={styles["step-title"]}>Create bounties for their issues</h2>
-          <p className={styles["step-description"]}>
-            Atae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
-          </p>
-        </div>
+        <PathArrow direction="left" />
+
+        <Step
+          title="Wait for developers to solves the issue"
+          description="Once your bounty is published, sit back and let the developers come up with their solutions. Subscribe to the GitHub issue to receive updates."
+          stepNumber={3}
+          icon={Step2}
+          position="left"
+        />
+
+        <PathArrow direction="right" />
+
+        <Step
+          title="Pay the developer who solve the issue"
+          description="Once a developer solves the problem, pay the agreed bounty. Enjoy the results of your investment and continue supporting open source!"
+          stepNumber={4}
+          icon={Step2}
+          position="right"
+        />
       </div>
     </section>
   );

@@ -13,9 +13,9 @@ const generalFaqs: Faq[] = [
         id: "0",
         question: "In which countries can I use Opire?",
         answer: `
-            Opire does not explicitly prohibit its use in any country. However, when using a payment provider like Stripe, the user is subject to the conditions imposed by Stripe.
+            Opire does not explicitly prohibit its use in any country.
             <br/><br/>
-            Before creating a reward, make sure that your country is supported on Stripe.
+            However, when using a payment provider like Stripe, the user is subject to the conditions imposed by Stripe, so if you want to receive bounties through Opire, please make sure Stripe supports your country.
             <br/><br/>
             You can check the list of supported countries <a href="https://www.linkedin.com/feed/update/urn:li:activity:7223750176866258944" target="_blank">in our LinkedIn post</a>
         `,

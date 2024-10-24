@@ -49,9 +49,9 @@ export function HeaderMobile() {
                     <Link className={styles.link} href="/home#faq" onClick={closeMenu}>
                         FAQS
                     </Link>
-                    {/* <Link className={styles.link} href="/blog" onClick={closeMenu}>
+                    <Link className={styles.link} href="https://dev.to/opire" target="_blank" onClick={closeMenu}>
                         BLOG
-                    </Link> */}
+                    </Link>
                 </nav>
 
                 <div className={styles.ctas}>
