@@ -1,0 +1,34 @@
+.section {
+  padding: 120px 144px 120px 144px;
+  max-width: 1440px;
+  margin: 0px auto;
+
+  @media (max-width: 768px) {
+    padding: 120px 24px 120px 24px;
+  }
+
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 800px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: masonry;
+  gap: 24px;
+  height: auto;
+  width: 100%;
+}

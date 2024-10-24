@@ -1,0 +1,100 @@
+.section {
+  width: 100%;
+  padding: 120px 144px 120px 144px;
+  max-width: 1440px;
+  margin: 0px auto;
+
+  @media (max-width: 768px) {
+    padding: 120px 24px 120px 24px;
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.light {
+  position: absolute;
+  width: 800px;
+  height: 450px;
+  top: 150px;
+  gap: 0px;
+  opacity: 0.6;
+  background: var(--color-light-secondary);
+  filter: blur(var(--blur-5));
+  scale: 0.7;
+  border-radius: 100%;
+  pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.steps {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  text-align: center;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 550px;
+  margin-bottom: 120px;
+  margin-top: 100px;
+}
+
+.step1 {
+  align-self: self-start;
+}
+
+.step2 {
+  align-self: self-end;
+}
+
+.step-icon {
+  width: 53px;
+  height: auto;
+}
+
+.step-title {
+  margin: 0px;
+  padding: 0px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: var(--color-gray-1);
+}
+
+.step-description {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: var(--color-white);
+}

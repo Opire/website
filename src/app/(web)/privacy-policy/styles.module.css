@@ -1,0 +1,16 @@
+.page {
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  background: var(--color-dark);
+  padding: 64px;
+  padding-top: calc(110px + 64px);
+  padding-bottom: 122px;
+  color: var(--color-white);
+
+  @media (max-width: 768px) {
+    padding: 120px 24px 120px 24px;
+  }
+}

@@ -1,0 +1,64 @@
+.logo_container {
+  height: auto;
+  width: 50px;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.logo {
+  display: block;
+}
+
+.drawer {
+  z-index: var(--z-index-3);
+  top: 110px;
+  height: calc(100vh - 110px);
+  width: 100vw;
+  left: 100vw;
+  transition: all 0.3s;
+  padding: 50px 24px;
+  position: fixed;
+  background-color: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+.drawer-open {
+  left: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+body:has(.drawer-open) {
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: max-content; */
+  gap: 20px;
+}
+
+.hamburguer-menu {
+  display: flex;
+  align-items: center;
+  z-index: var(--z-index-1);
+  color: var(--color-white);
+}

@@ -34,7 +34,6 @@ export const metadata: Metadata = {
 };
 
 const theme = createTheme({
-  primaryColor: "teal",
   fontFamily: mainFont.style.fontFamily,
   cursorType: "pointer",
   headings: {

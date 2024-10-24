@@ -1,0 +1,73 @@
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.light {
+  position: absolute;
+  top: 350px;
+  width: 400px;
+  height: 207px;
+  gap: 0px;
+  background: var(--color-light-secondary);
+  filter: blur(var(--blur-2));
+  pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.banner {
+  padding: 100px 48px 80px 48px;
+  max-width: 1440px;
+  margin: 0px auto;
+  border-bottom: 4px solid var(--color-primary);
+  background: var(--color-gray-9);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: start center;
+  color: var(--color-white);
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: left;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52.8px;
+  /* letter-spacing: -0.02em; */
+  color: var(--color-white);
+  margin: 0px auto;
+  display: inline-block;
+  width: auto;
+  max-width: 650px;
+}
+
+.title--highlighted {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--color-light-primary);
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  /* letter-spacing: 0.02em; */
+  text-align: left;
+  width: 100%;
+  max-width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.join-button {
+  display: flex;
+  justify-content: center;
+}

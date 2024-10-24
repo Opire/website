@@ -18,6 +18,8 @@
     "@mantine/modals": "7.12.2",
     "@mantine/notifications": "7.12.2",
     "@mantine/nprogress": "7.12.2",
+    "@tabler/icons-react": "^3.19.0",
+    "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^7.1.0",
     "embla-carousel-react": "^7.1.0",
     "next": "14.2.7",

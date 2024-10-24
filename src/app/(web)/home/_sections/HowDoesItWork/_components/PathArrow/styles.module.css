@@ -1,0 +1,13 @@
+.path-arrow-icon {
+  width: 310px;
+  height: auto;
+  transform: rotate(60deg);
+
+  @media (min-width: 700px) {
+    transform: rotate(40deg);
+  }
+
+  @media (min-width: 900px) {
+    transform: rotate(20deg);
+  }
+}

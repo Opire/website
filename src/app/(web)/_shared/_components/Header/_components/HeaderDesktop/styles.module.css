@@ -1,0 +1,31 @@
+.logo_container {
+  height: auto;
+  width: 100px;
+  aspect-ratio: 2;
+  position: relative;
+}
+
+.logo {
+  display: block;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.ctas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

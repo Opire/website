@@ -1,0 +1,78 @@
+.section {
+  position: relative;
+  padding: 120px 144px 120px 144px;
+
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 120px 24px 120px 24px;
+  }
+}
+
+.light {
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  top: 150px;
+  gap: 0px;
+  opacity: 0.1;
+  background: var(--color-light-secondary);
+  filter: blur(var(--blur-4));
+  scale: 0.7;
+  border-radius: 100%;
+  pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52.8px;
+  /* letter-spacing: -0.02em; */
+  text-align: center;
+  color: var(--color-white);
+  margin: 0px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.title--highlighted {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52.8px;
+  /* letter-spacing: -0.02em; */
+  text-align: center;
+  color: var(--color-light-primary);
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 24px;
+  color: var(--color-white);
+  margin-top: 50px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}
+
+.illustration {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.benfits {
+  flex: 1;
+  max-width: 546px;
+}

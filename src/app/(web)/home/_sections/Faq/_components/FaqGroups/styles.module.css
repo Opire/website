@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 24px;
+
+    @media (min-width: 1024px) {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 24px;
+        max-width: 140px;
+    }
+}
+
+.group-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+.group-indicator {
+    width: 48px;
+    height: 4px;
+    transition: all 0.3s;
+}
+
+.group-indicator--active {
+    background-color: var(--color-secondary);
+    width: 48px;
+    height: 4px;
+}
+
+.group-name {
+    color: var(--color-gray-2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s;
+    padding: 0px;
+}
+
+.group-name--active {
+    font-weight: 700;
+    color: var(--color-secondary);
+}

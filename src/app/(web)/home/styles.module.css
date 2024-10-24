@@ -1,0 +1,10 @@
+.page {
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  background: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+}
