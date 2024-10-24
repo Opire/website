@@ -79,7 +79,7 @@ export default function PricingCard({
         ))}
       </ul>
 
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <OPButton
           size="big"
           variant={isHighlighted ? "primary" : "secondary"}
@@ -87,7 +87,7 @@ export default function PricingCard({
         >
           GET STARTED
         </OPButton>
-      </div>
+      </div> */}
     </div>
   );
 }
