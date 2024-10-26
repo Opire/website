@@ -33,7 +33,7 @@ export default function Pricing() {
           </small>
         </Group>
 
-        <Group className={clsx(styles["banner-container"], styles["banner-container-inverse"])}>
+        <Group className={clsx(styles["banner-container"])}>
           <h2 className={styles["banner-title"]}>
             Developers receive <span className={styles["banner-title-undeline"]}>100%
               <Image component={NextImage} src={Underline} alt="underline" className={styles.underline} />

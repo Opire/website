@@ -1,6 +1,8 @@
 import styles from "./styles.module.css";
 import Step1 from '../../../../../../public/assets/illustrations/step-1.svg'
 import Step2 from '../../../../../../public/assets/illustrations/step-2.svg'
+import Step3 from '../../../../../../public/assets/illustrations/step-3.svg'
+import Step4 from '../../../../../../public/assets/illustrations/step-4.svg'
 import PathArrow from "./_components/PathArrow/PathArrow";
 import Step from "./_components/Step/Step";
 
@@ -20,7 +22,7 @@ export default function HowDoesItWork() {
           position="left"
         />
 
-        <PathArrow direction="right" />
+        <PathArrow direction="right" variant={1} />
 
         <Step
           title="Create a bounty for that issue"
@@ -30,23 +32,23 @@ export default function HowDoesItWork() {
           position="right"
         />
 
-        <PathArrow direction="left" />
+        <PathArrow direction="left" variant={1} />
 
         <Step
           title="Wait for developers to solves the issue"
           description="Once your bounty is published, sit back and let the developers come up with their solutions. Subscribe to the GitHub issue to receive updates."
           stepNumber={3}
-          icon={Step2}
+          icon={Step3}
           position="left"
         />
 
-        <PathArrow direction="right" />
+        <PathArrow direction="right" variant={1} />
 
         <Step
           title="Pay the developer who solve the issue"
           description="Once a developer solves the problem, pay the agreed bounty. Enjoy the results of your investment and continue supporting open source!"
           stepNumber={4}
-          icon={Step2}
+          icon={Step4}
           position="right"
         />
       </div>
