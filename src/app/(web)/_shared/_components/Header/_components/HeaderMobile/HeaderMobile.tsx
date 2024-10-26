@@ -10,6 +10,7 @@ import SmallLogo from "../../../../../../../../public/assets/small_logo.svg";
 import { useState } from "react";
 import clsx from "clsx";
 import { OPButton } from "../../../Button/OPButton";
+import { HEADER_MENU } from "../_data/HEADER_MENU";
 
 export function HeaderMobile() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,21 +38,16 @@ export function HeaderMobile() {
                 <nav className={clsx(
                     styles.menu,
                 )}>
-                    <Link className={styles.link} href="/home#who-is-it-for" onClick={closeMenu}>
-                        WHO IS IT FOR?
-                    </Link>
-                    <Link className={styles.link} href="/home#how-does-it-work" onClick={closeMenu}>
-                        HOW DOES IT WORK?
-                    </Link>
-                    <Link className={styles.link} href="/home#pricing" onClick={closeMenu}>
-                        PRICING
-                    </Link>
-                    <Link className={styles.link} href="/home#faq" onClick={closeMenu}>
-                        FAQS
-                    </Link>
-                    {/* <Link className={styles.link} href="/blog" onClick={closeMenu}>
-                        BLOG
-                    </Link> */}
+                    {HEADER_MENU.map((item) => (
+                        <Link
+                            key={item.text}
+                            className={styles.link}
+                            href={item.href}
+                            onClick={closeMenu}
+                        >
+                            {item.text}
+                        </Link>
+                    ))}
                 </nav>
 
                 <div className={styles.ctas}>
