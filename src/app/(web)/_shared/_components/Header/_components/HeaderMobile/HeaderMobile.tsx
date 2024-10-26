@@ -43,6 +43,7 @@ export function HeaderMobile() {
                             key={item.text}
                             className={styles.link}
                             href={item.href}
+                            target={item.target}
                             onClick={closeMenu}
                         >
                             {item.text}

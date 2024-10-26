@@ -1,6 +1,7 @@
 interface HeaderMenu {
     text: string;
     href: string;
+    target?: string;
 }
 
 export const HEADER_MENU: HeaderMenu[] = [
@@ -26,6 +27,7 @@ export const HEADER_MENU: HeaderMenu[] = [
     },
     {
         text: "BLOG",
-        href: "/blog",
+        href: "https://dev.to/opire",
+        target: "_blank"
     }
 ]

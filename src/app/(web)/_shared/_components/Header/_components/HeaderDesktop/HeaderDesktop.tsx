@@ -23,6 +23,7 @@ export function HeaderDesktop() {
                         key={item.text}
                         className={styles.link}
                         href={item.href}
+                        target={item.target}
                     >
                         {item.text}
                     </Link>

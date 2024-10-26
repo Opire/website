@@ -1,11 +1,4 @@
-.benefits {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-}
-
-.benefit {
+.target {
   display: flex;
   flex-direction: row;
   max-width: 520px;
@@ -14,12 +7,12 @@
   justify-content: center;
 }
 
-.benefit-icon {
+.target-icon {
   width: 50px;
   height: auto;
 }
 
-.benefit-text {
+.target-text {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -27,7 +20,7 @@
   margin: 0px;
 }
 
-.benefit-title {
+.target-title {
   padding: 0px;
   margin: 0px;
   font-size: 28px;
@@ -37,7 +30,7 @@
   margin-bottom: 10px;
 }
 
-.benefit-description {
+.target-description {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

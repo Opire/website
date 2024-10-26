@@ -1,6 +1,32 @@
-.path-arrow-icon {
-  width: 310px;
+.icon {
   height: auto;
+}
+
+.icon-1 {
+  width: 150px;
+
+  @media (min-width: 700px) {
+    width: 250px;
+  }
+
+  @media (min-width: 900px) {
+    width: 300px;
+  }
+}
+
+.icon-2 {
+  width: 150px;
+
+  @media (min-width: 700px) {
+    width: 250px;
+  }
+
+  @media (min-width: 900px) {
+    width: 250px;
+  }
+}
+
+.icon-1--right {
   transform: rotate(60deg);
 
   @media (min-width: 700px) {
@@ -9,5 +35,42 @@
 
   @media (min-width: 900px) {
     transform: rotate(20deg);
+  }
+}
+
+.icon-1--left {
+  transform: rotate(-60deg) scale(-1, 1);
+
+
+  @media (min-width: 700px) {
+    transform: rotate(-40deg) scale(-1, 1);
+  }
+
+  @media (min-width: 900px) {
+    transform: rotate(-20deg) scale(-1, 1);
+  }
+}
+
+.icon-2--right {
+  transform: rotate(30deg);
+
+  @media (min-width: 700px) {
+    transform: rotate(20deg);
+  }
+
+  @media (min-width: 900px) {
+    transform: rotate(0deg);
+  }
+}
+
+.icon-2--left {
+  transform: rotate(-30deg) scale(-1, 1);
+
+  @media (min-width: 700px) {
+    transform: rotate(-20deg) scale(-1, 1);
+  }
+
+  @media (min-width: 900px) {
+    transform: rotate(-10deg) scale(-1, 1);
   }
 }

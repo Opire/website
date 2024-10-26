@@ -10,21 +10,22 @@
   }
 }
 
-.title-container {
+/* .title-container {
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
   gap: 32px;
-}
+} */
 
 .title {
   font-size: 48px;
   font-weight: 500;
   line-height: 48px;
   text-align: center;
-  color: linear-gradient(180deg, var(--color-white) 0%, var(--color-white-opacity-08) 100%);
-  max-width: 800px;
+  width: 100%;
+  color: var(--color-white);
   margin: 0px;
+  margin-bottom: 30px;
 }
 
 .banner-container {
