@@ -1,6 +1,6 @@
 "use client";
 
-import { Group, Image, SegmentedControl } from "@mantine/core";
+import { Center, Group, Image, SegmentedControl } from "@mantine/core";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import NextImage from "next/image";
@@ -15,41 +15,41 @@ export default function Pricing() {
 
   return (
     <section id="pricing" className={styles.section}>
-      <Group className={styles["title-container"]}>
-        <h1 className={styles.title}>Pricing</h1>
+      <h1 className={styles.title}>Pricing</h1>
 
-        <Group className={styles["banner-container"]}>
-          <h2 className={styles["banner-title"]}>
-            Free to use
-          </h2>
+      <Group className={styles["banner-container"]}>
+        <h2 className={styles["banner-title"]}>
+          Free to use
+        </h2>
 
-          <small className={styles["banner-tagline"]}>
-            Opire is free to use. The bounty creator only pay a <strong>4% Opire fees</strong> + Stripe fees when a bounty is paid out.
-            <br />
-            <br />
-            For those seeking more, we offer subscription plans for organizations and individuals to unlock additional features.
-            <br />
-            You can purchase your preferred plan in your Opire settings.
-          </small>
-        </Group>
+        <small className={styles["banner-tagline"]}>
+          Opire is free to use. The bounty creator only pay a <strong>4% Opire fees</strong> + Stripe fees when a bounty is paid out.
+          <br />
+          <br />
+          For those seeking more, we offer subscription plans for organizations and individuals to unlock additional features.
+          <br />
+          You can purchase your preferred plan in your Opire settings.
+        </small>
+      </Group>
 
-        <Group className={clsx(styles["banner-container"])}>
-          <h2 className={styles["banner-title"]}>
-            Developers receive <span className={styles["banner-title-undeline"]}>100%
-              <Image component={NextImage} src={Underline} alt="underline" className={styles.underline} />
-            </span> of bounties
-          </h2>
+      <Group className={clsx(styles["banner-container"])}>
+        <h2 className={styles["banner-title"]}>
+          Developers receive <span className={styles["banner-title-undeline"]}>100%
+            <Image component={NextImage} src={Underline} alt="underline" className={styles.underline} />
+          </span> of bounties
+        </h2>
 
-          <small className={styles["banner-tagline"]}>
-            {/* Associated costs are charged on top of the bounty amount, resulting in the final price to be paid. */}
-            Developers receive 100% of the bounty they earn, with no deductions or hidden fees taken from their payout.
-            <br />
-            <br />
-            All associated fees are covered by the bounty creator.
-          </small>
-        </Group>
-        {/* TODO: Explain Free Tier  */}
+        <small className={styles["banner-tagline"]}>
+          {/* Associated costs are charged on top of the bounty amount, resulting in the final price to be paid. */}
+          Developers receive 100% of the bounty they earn, with no deductions or hidden fees taken from their payout.
+          <br />
+          <br />
+          All associated fees are covered by the bounty creator.
+        </small>
+      </Group>
+      {/* TODO: Explain Free Tier  */}
 
+      <Center style={{ paddingBottom: '5rem' }}>
         <SegmentedControl
           size="md"
           radius="xl"
@@ -60,7 +60,7 @@ export default function Pricing() {
           bg={"var(--color-white-opacity-0102)"}
           p={"4px"}
         />
-      </Group>
+      </Center>
 
       {value === "Organizations" && (
         <Group className={clsx(styles["pricing-cards"], styles["pricing-cards--3cols"])}>
