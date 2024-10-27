@@ -38,12 +38,14 @@ export function KpiBarChart({
                 </div>
                 <div className={styles.value}>
                     <BarChart
-                        h={"500"}
+                        h={"400"}
                         data={data}
                         dataKey={xField}
                         series={config}
                         tickLine="xy"
                         gridAxis="xy"
+                        maxBarWidth={70}
+                        barProps={{ radius: [5, 5, 0, 0] }}
                     />
                 </div>
             </article>

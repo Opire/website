@@ -90,9 +90,9 @@ export default async function OpenStartup() {
 
           <Finances />
 
-          <Community />
-
           <Growth kpis={kpis} />
+
+          <Community />
 
           <ContinuousImprovement />
         </Container>

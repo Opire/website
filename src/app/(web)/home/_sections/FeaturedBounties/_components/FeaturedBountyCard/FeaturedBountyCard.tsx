@@ -24,15 +24,17 @@ export default function FeaturedBountyCard({
       <p className={styles.title}>
         {title.toUpperCase()}
       </p>
-      <Group className={styles.tags}>
+      <div className={styles.tags}>
         {programmingLanguages.map(programmingLanguage => (
           <Badge
             key={programmingLanguage}
             variant="outline"
-            className={clsx(
-              styles.tag,
-              styles["tag--programming-language"]
-            )}
+            classNames={{
+              root: clsx(
+                styles.tag,
+                styles["tag--programming-language"]
+              ),
+            }}
           >
             {programmingLanguage}
           </Badge>
@@ -48,7 +50,7 @@ export default function FeaturedBountyCard({
             COMMANDS NOT AVAILABLE
           </Badge>
         )} */}
-      </Group>
+      </div>
       <img
         className={styles["organization-logo"]}
         src={logoUrl}

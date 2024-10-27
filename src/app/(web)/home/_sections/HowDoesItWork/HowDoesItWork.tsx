@@ -35,7 +35,7 @@ export default function HowDoesItWork() {
         <PathArrow direction="left" variant={1} />
 
         <Step
-          title="Wait for developers to solves the issue"
+          title="Wait for developers to solve the issue"
           description="Once your bounty is published, sit back and let the developers come up with their solutions. Subscribe to the GitHub issue to receive updates."
           stepNumber={3}
           icon={Step3}
@@ -45,7 +45,7 @@ export default function HowDoesItWork() {
         <PathArrow direction="right" variant={1} />
 
         <Step
-          title="Pay the developer who solve the issue"
+          title="Pay the developer who solves the issue"
           description="Once a developer solves the problem, pay the agreed bounty. Enjoy the results of your investment and continue supporting open source!"
           stepNumber={4}
           icon={Step4}

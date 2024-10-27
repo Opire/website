@@ -14,7 +14,7 @@
 .kpis {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-items: center;
+    place-items: center strech;
     gap: 60px;
-    margin: 40px 0px;
+    margin: 80px 0px;
 }

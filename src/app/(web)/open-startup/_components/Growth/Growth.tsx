@@ -31,7 +31,7 @@ export function Growth({
 
             <div className={styles.kpis}>
                 <KpiNumber
-                    title="Total Bounties Paid"
+                    title="Bounties Paid"
                     tooltip="The total sum of all bounties paid to developers who have solved issues on Opire. An issue may have more than one bounty."
                     value={kpis.totalRewardsPaid}
                 />
@@ -43,7 +43,7 @@ export function Growth({
                 />
 
                 <KpiNumber
-                    title="Available Bounties"
+                    title="Bounties Available"
                     tooltip="The total amount of money paid in bounties. An issue may have more than one bounty."
                     value={kpis.activeRewardsAvailable}
                 />

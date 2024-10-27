@@ -52,6 +52,7 @@ export default function PricingCard({
         </div>
         <Switch
           checked={isAnnual}
+          color={"var(--color-light-primary)"}
           onChange={() => onToggleAnnual(!isAnnual)}
           label="Annual subscription"
         />
