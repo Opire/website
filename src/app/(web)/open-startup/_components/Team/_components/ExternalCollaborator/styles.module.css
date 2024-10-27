@@ -1,0 +1,61 @@
+.card {
+    border: 1px solid var(--color-primary);
+    padding: 16px;
+    border-radius: calc(var(--radius-md));
+    background-color: var(--color-dark);
+    z-index: var(--z-index-1);
+    border-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, var(--color-gray-9) 0%, var(--color-opacity-0) 100%);
+
+    border-image: linear-gradient(180deg,
+            var(--color-primary) 0%,
+            var(--color-opacity-0) 100%) 1;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 70px;
+    align-self: self-start;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.data {
+    font-size: 20px;
+}
+
+.name-link {
+    text-decoration-color: var(--color-primary);
+}
+
+.name {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    text-wrap: wrap;
+    color: var(--color-primary);
+}
+
+.role {
+    font-weight: 300;
+}
+
+.salary-value {
+    flex: auto;
+    align-self: flex-start;
+    font-weight: 300;
+}
+
+.links {
+    flex: 1;
+}

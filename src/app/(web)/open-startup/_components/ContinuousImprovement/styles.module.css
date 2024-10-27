@@ -1,0 +1,36 @@
+.section {
+    padding: 60px 0px;
+    padding-bottom: 0px;
+}
+
+.light {
+    position: absolute;
+    top: 300px;
+    width: 400px;
+    height: 207px;
+    gap: 0px;
+    background: var(--color-light-primary);
+    filter: blur(var(--blur-2));
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 48px 80px 48px;
+    max-width: 1440px;
+    margin: 0px auto;
+    border-bottom: 4px solid var(--color-primary);
+    background: var(--color-gray-9);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}

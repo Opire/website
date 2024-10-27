@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
-import "./globals.css";
+
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
+import '@mantine/charts/styles.css';
+
+import "./globals.css";
 
 import {
   ColorSchemeScript,
@@ -12,26 +14,6 @@ import {
 } from "@mantine/core";
 
 const mainFont = Outfit({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Opire - the bounty platform for software developers",
-  description:
-    "With Opire, anyone can create bounties for open-source projects and grow their community, while developers can solve issues and earn the associated rewards.",
-  keywords: [
-    "bounty",
-    "bounties",
-    "bounty platform",
-    "bounty hunter",
-    "bounty hunting",
-    "opire",
-    "opiredev",
-    "open source",
-    "community",
-    "OOS",
-    "reward",
-    "reward platform",
-  ],
-};
 
 const theme = createTheme({
   fontFamily: mainFont.style.fontFamily,
@@ -51,6 +33,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/assets/favicon.ico" />
         <ColorSchemeScript />
+        <script defer src="https://eu.umami.is/script.js" data-website-id={process.env.NEXT_PUBLIC_UMAMI_TOKEN}></script>
       </head>
       <body className={mainFont.className}>
         <MantineProvider defaultColorScheme="dark" theme={theme}>

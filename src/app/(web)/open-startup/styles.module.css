@@ -1,0 +1,39 @@
+.page {
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  background: var(--color-dark);
+  padding: 64px;
+  padding-top: calc(110px + 64px);
+  padding-bottom: 122px;
+  color: var(--color-white);
+  padding-bottom: 0px;
+
+  @media (max-width: 768px) {
+    padding: 120px 24px 120px 24px;
+    padding-bottom: 0px;
+  }
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 48px;
+  text-align: center;
+  color: linear-gradient(180deg, var(--color-white) 0%, var(--color-white-opacity-08) 100%);
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 700px;
+  margin: 0px auto;
+  margin-bottom: 70px;
+}

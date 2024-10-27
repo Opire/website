@@ -2,10 +2,10 @@ import { Image } from "@mantine/core";
 
 import styles from "./styles.module.css";
 import Link from "next/link";
-import { IconWorld } from "@tabler/icons-react";
 import NextImage from 'next/image';
 import BigLogo from "../../../../../../../../public/assets/big_logo.svg";
 import { OPButton } from "../../../Button/OPButton";
+import { HEADER_MENU } from "../_data/HEADER_MENU";
 
 export function HeaderDesktop() {
 
@@ -18,21 +18,16 @@ export function HeaderDesktop() {
             </div>
 
             <nav className={styles.menu}>
-                <Link className={styles.link} href="/home#who-is-it-for">
-                    WHO IS IT FOR?
-                </Link>
-                <Link className={styles.link} href="/home#how-does-it-work">
-                    HOW DOES IT WORK?
-                </Link>
-                <Link className={styles.link} href="/home#pricing">
-                    PRICING
-                </Link>
-                <Link className={styles.link} href="/home#faq">
-                    FAQS
-                </Link>
-                <Link className={styles.link} href="https://dev.to/opire" target="_blank" >
-                    BLOG
-                </Link>
+                {HEADER_MENU.map((item) => (
+                    <Link
+                        key={item.text}
+                        className={styles.link}
+                        href={item.href}
+                        target={item.target}
+                    >
+                        {item.text}
+                    </Link>
+                ))}
             </nav>
 
             <div className={styles.ctas}>
