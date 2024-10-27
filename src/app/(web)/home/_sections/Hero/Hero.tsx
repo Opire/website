@@ -22,7 +22,6 @@ export function Hero() {
                     <div className={styles.ctas}>
                         <OPButton size="big" href="https://app.opire.dev" target="_blank">GET STARTEED NOW</OPButton>
                         <OPButton variant="secondary" size="big" highlight leftSection={<IconCaretRightFilled color="var(--color-primary)" />} onClick={() => {
-                            console.log("WATCH A VIDEO")
                             setIsVideoModalOpen(true)
                         }}>WATCH A VIDEO</OPButton>
                     </div>
