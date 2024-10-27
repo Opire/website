@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
-import "./globals.css";
+
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
+import '@mantine/charts/styles.css';
+
+import "./globals.css";
 
 import {
   ColorSchemeScript,
@@ -51,6 +54,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/assets/favicon.ico" />
         <ColorSchemeScript />
+        <script defer src="https://eu.umami.is/script.js" data-website-id={process.env.NEXT_PUBLIC_UMAMI_TOKEN}></script>
       </head>
       <body className={mainFont.className}>
         <MantineProvider defaultColorScheme="dark" theme={theme}>

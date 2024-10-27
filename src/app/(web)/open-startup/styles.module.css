@@ -9,9 +9,11 @@
   padding-top: calc(110px + 64px);
   padding-bottom: 122px;
   color: var(--color-white);
+  padding-bottom: 0px;
 
   @media (max-width: 768px) {
     padding: 120px 24px 120px 24px;
+    padding-bottom: 0px;
   }
 }
 

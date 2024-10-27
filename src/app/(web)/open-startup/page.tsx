@@ -4,8 +4,15 @@ import { Footer } from "../_shared/_components/Footer/Footer";
 import { LogoMask } from "../home/_sections/Hero/_components/LogoMask/LogoMask";
 import { Container } from "../_shared/_components/Container/Container";
 import { Team } from "./_components/Team/Team";
+import { Finances } from "./_components/Finances/Finances";
+import { Community } from "./_components/Community/Community";
+import { ContinuousImprovement } from "./_components/ContinuousImprovement/ContinuousImprovement";
+import { Growth, KPIs } from "./_components/Growth/Growth";
+import { KpiBarChart } from "./_components/Growth/_components/KpiBarChart/KpiBarChart";
 
-export default function OpenStartup() {
+export default async function OpenStartup() {
+  const kpis: KPIs = await fetch(`https://api.opire.dev/analytics/kpis`).then((res) => res.json());
+  console.log(kpis)
   return (
     <div className={styles.page}>
       <Header />
@@ -22,8 +29,13 @@ export default function OpenStartup() {
 
           <Team />
 
-          {/* <ExternalTeam /> */}
+          <Finances />
 
+          <Community />
+
+          <Growth kpis={kpis} />
+
+          <ContinuousImprovement />
         </Container>
       </main>
       <Footer />

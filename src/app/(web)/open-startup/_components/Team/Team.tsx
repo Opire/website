@@ -5,22 +5,22 @@ import { ExternalCollaborator } from "./_components/ExternalCollaborator/Externa
 
 export function Team() {
     return (
-        <div>
+        <section className={styles.section}>
             <h2 className={styles.title}>Team</h2>
 
             <div className={styles["team-members"]}>
                 {TEAM_MEMBERS.map((member) => (
-                    <TeamMember {...member} />
+                    <TeamMember key={member.name} {...member} />
                 ))}
             </div>
 
-            <h2 className={styles.title}>External Collaborators</h2>
+            <h3 className={styles.title2}>External Collaborators</h3>
 
             <div className={styles["external-collaborators"]}>
                 {EXTERNAL_COLLABORATORS.map((member) => (
-                    <ExternalCollaborator {...member} />
+                    <ExternalCollaborator key={member.name} {...member} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
