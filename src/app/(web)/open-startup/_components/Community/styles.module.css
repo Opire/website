@@ -11,7 +11,17 @@
     margin: 30px 0px;
 }
 
-.discord {
+.discord-container {
+    height: auto;
+    min-width: 200px;
+    max-width: 400px;
+    place-self: center;
+    width: 100%;
+    aspect-ratio: 43 / 11;
+    position: relative;
+}
+
+.discord-link {
     display: flex;
     justify-content: center;
     gap: 20px;

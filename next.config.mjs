@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    images: {
+        dangerouslyAllowSVG: true,
+        remotePatterns: [{
+            protocol: 'https',
+            hostname: 'invidget.switchblade.xyz',
+            port: '',
+            pathname: '/jWwwsHRbnJ'
+        }]
+    },
     experimental: {
         optimizePackageImports: [
             '@mantine/carousel',
