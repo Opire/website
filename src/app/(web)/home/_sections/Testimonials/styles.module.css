@@ -7,6 +7,7 @@
     padding: 120px 24px 120px 24px;
   }
 
+  position: relative;
 }
 
 .title-container {
@@ -31,4 +32,13 @@
   gap: 24px;
   height: auto;
   width: 100%;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, var(--color-opacity-0) 75%, var(--color-dark) 90%);
 }

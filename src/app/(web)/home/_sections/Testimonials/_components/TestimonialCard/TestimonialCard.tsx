@@ -11,6 +11,7 @@ export default function TestimonialCard({
     avatar,
     link,
     platform,
+    designation
   },
 }: {
   testimonial: Testimonial;
@@ -25,6 +26,7 @@ export default function TestimonialCard({
           <Flex className={styles["user-data"]}>
             <p className={styles["fullname"]}>{fullname}</p>
             <small className={styles["username"]}>{username}</small>
+            <small className={styles["username"]}>{designation}</small>
           </Flex>
         </div>
         <div>

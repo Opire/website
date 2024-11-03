@@ -6,6 +6,7 @@ export interface Testimonial {
     avatar?: string;
     link?: string;
     platform?: "twitter" | "github";
+    designation: string;
 }
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -20,7 +21,8 @@ export const TESTIMONIALS: Testimonial[] = [
         avatar: "https://pbs.twimg.com/profile_images/1839808673075367936/Yka3_FKy_normal.jpg",
         username: "@MicheleRivaCode",
         link: "https://x.com/MicheleRivaCode/status/1674687396636442625?t=yveldrNE0DWGfKnnix9c_Q&s=08",
-        platform: "twitter"
+        platform: "twitter",
+        designation: "Co-founder & CTO of Orama"
     },
     {
         id: "1",
@@ -35,7 +37,8 @@ export const TESTIMONIALS: Testimonial[] = [
         avatar: "https://avatars.githubusercontent.com/u/6259812?s=80&u=28e36fb88a7aca1a00b81e335f4e83203a306599&v=4",
         username: "@leaysgur",
         link: "https://github.com/oxc-project/oxc/issues/611#issuecomment-2336507444",
-        platform: "github"
+        platform: "github",
+        designation: "Core member of OXC"
     },
     {
         id: "2",
@@ -52,7 +55,8 @@ export const TESTIMONIALS: Testimonial[] = [
         avatar: "https://avatars.githubusercontent.com/u/11634131?v=4",
         username: "@MHase",
         link: "https://github.com/strapi/strapi/issues/11998#issuecomment-2294996134",
-        platform: "github"
+        platform: "github",
+        designation: "Software Engineer"
     },
     {
         id: "3",
@@ -63,6 +67,7 @@ export const TESTIMONIALS: Testimonial[] = [
         avatar: "https://pbs.twimg.com/profile_images/1549052013178134529/FljtGcgj_400x400.jpg",
         username: "@ivanburazin",
         link: "https://x.com/ivanburazin/status/1810013652948504623",
-        platform: "twitter"
+        platform: "twitter",
+        designation: "CEO and Co-Founder at Daytona"
     },
 ];
