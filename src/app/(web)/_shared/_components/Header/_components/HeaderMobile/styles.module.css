@@ -16,7 +16,7 @@
   width: 100vw;
   left: 100vw;
   transition: all 0.3s;
-  padding: 50px 24px 100px 24px;
+  padding: 50px 24px 150px 24px;
   position: fixed;
   background-color: var(--color-dark);
   display: flex;
