@@ -59,12 +59,6 @@ export const metadata: Metadata = {
         height: 924,
         alt: "Opire Open Startup site",
       },
-      {
-        url: "https://opire.dev/assets/logo.png",
-        width: 1920,
-        height: 1920,
-        alt: "Opire Logo",
-      }
     ],
   }
 };

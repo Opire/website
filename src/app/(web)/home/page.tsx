@@ -60,12 +60,6 @@ export const metadata: Metadata = {
         width: 1901,
         height: 924,
         alt: "Opire Website",
-      },
-      {
-        url: "https://opire.dev/assets/logo.png",
-        width: 1920,
-        height: 1920,
-        alt: "Opire Logo",
       }
     ],
   }
