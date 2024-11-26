@@ -67,24 +67,4 @@ export const EXTERNAL_COLLABORATORS: ExternalCollaboratorType[] = [
             linkedIn: "https://www.linkedin.com/in/tommaso-tavormina-88b68b7b/",
         }
     },
-    {
-        name: "Anmol",
-        role: "Technical Writer",
-        payment: "$100 per post + $50 for every 10k views up to 20k views",
-        image: "/assets/images/team/anmol_baranwal.jpeg",
-        engagement: "About 2 posts per month",
-        links: {
-            linkedIn: "https://www.linkedin.com/in/anmol-baranwal/",
-        }
-    },
-    {
-        name: "Arindam",
-        role: "Technical Writer",
-        payment: "$150 per post",
-        image: "/assets/images/team/arindam_majumder.jpeg",
-        engagement: "About 2 posts per month",
-        links: {
-            linkedIn: "https://www.linkedin.com/in/arindam2004/",
-        }
-    }
 ] 
