@@ -23,7 +23,7 @@ export default function CommunityBanner() {
                     <OPButton
                         variant="secondary"
                         size="big"
-                        href="https://discord.gg/jWwwsHRbnJ"
+                        href="https://discord.gg/Rfq8CMZH4b"
                         target="_blank"
                     >
                         Join Our Discord

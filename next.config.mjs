@@ -6,7 +6,7 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'invidget.switchblade.xyz',
             port: '',
-            pathname: '/jWwwsHRbnJ'
+            pathname: '/Rfq8CMZH4b'
         }]
     },
     experimental: {

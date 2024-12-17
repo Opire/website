@@ -45,7 +45,7 @@ export const FOOTER_LINKS: FooterGroupType[] = [
         links: [
             {
                 text: "Discord",
-                href: "https://discord.gg/jWwwsHRbnJ",
+                href: "https://discord.gg/Rfq8CMZH4b",
                 target: "_blank",
             },
             {
