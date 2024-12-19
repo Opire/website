@@ -44,7 +44,7 @@ export function PricingCard({
         { [styles["card--highlighted"]]: isHighlighted },
       )}
     >
-      <Group className={styles.header}>
+      <div className={styles.header}>
         <h1 className={styles.name}>{name}</h1>
         <div className={styles["prices-container"]}>
           <div className={styles["old-price"]}>
@@ -65,7 +65,7 @@ export function PricingCard({
           onChange={() => onToggleAnnual(!isAnnual)}
           label="Annual subscription"
         />
-      </Group>
+      </div>
 
       <div className={styles.separator} />
 

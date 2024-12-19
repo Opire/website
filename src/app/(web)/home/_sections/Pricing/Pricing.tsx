@@ -70,11 +70,11 @@ export function Pricing() {
       )}
 
       {value === "Individuals" && (
-        <Group className={clsx(styles["pricing-cards"], styles["pricing-cards--2cols"])}>
+        <div className={clsx(styles["pricing-cards"], styles["pricing-cards--2cols"])}>
           {INDIVIDUAL_PRICING_PLANS.map((plan) => (
             <PricingCard key={`individual-${plan.name}`} {...plan} isAnnual={isShowingAnnual} onToggleAnnual={(value) => setIsShowingAnnual(value)} />
           ))}
-        </Group>
+        </div>
       )}
 
       {/* <div className={styles.light}></div> */}
