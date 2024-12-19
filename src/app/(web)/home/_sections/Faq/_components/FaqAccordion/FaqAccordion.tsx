@@ -7,21 +7,37 @@ import {
 } from "@mantine/core";
 import styles from "./styles.module.css";
 import { IconPlus } from "@tabler/icons-react";
-import { Faq } from "../../_data/FAQs";
+import { Faq, FaqCategory, FaqGroupType } from "../../_data/FAQs";
+import clsx from "clsx";
 
-export default function FaqAccordion({
+export function FaqAccordion({
     faqs,
+    group,
 }: {
-    faqs: Faq[];
+    faqs: FaqCategory;
+    group: FaqGroupType;
 }) {
-    const items = faqs.map((item) => (
-        <AccordionItem key={item.id} value={item.question}>
-            <AccordionControl>{item.question}</AccordionControl>
-            <AccordionPanel>
-                <div dangerouslySetInnerHTML={{ __html: item.answer }} />
-            </AccordionPanel>
-        </AccordionItem>
-    ));
+
+    function getAccordionItemForAllGroups() {
+        const accordionItems = [];
+        for (const [faqGroup, faqsFromGroup] of Object.entries(faqs)) {
+            const items = faqsFromGroup.map((item, index) => (
+                <AccordionItem key={item.id} value={item.question} className={clsx(
+                    { [styles.firstFaq]: index === 0 },
+                    { [styles.visible]: faqGroup === group }
+                )}>
+                    <AccordionControl>{item.question}</AccordionControl>
+                    <AccordionPanel>
+                        <div dangerouslySetInnerHTML={{ __html: item.answer }} />
+                    </AccordionPanel>
+                </AccordionItem>
+            ));
+
+            accordionItems.push(...items);
+        }
+
+        return accordionItems;
+    }
 
     return (
         <Group className={styles["faq-content"]}>
@@ -38,7 +54,7 @@ export default function FaqAccordion({
                     chevron: styles["accordion-icon--close"],
                 }}
             >
-                {items}
+                {getAccordionItemForAllGroups()}
             </Accordion>
         </Group>
     );

@@ -7,9 +7,9 @@ import NextImage from "next/image";
 import Underline from "../../../../../../public/assets/illustrations/underline.svg"
 import clsx from "clsx";
 import { INDIVIDUAL_PRICING_PLANS, ORGANIZATION_PRICING_PLANS } from "./_data/PRICING_PLANS";
-import PricingCard from "./_components/PricingCard/PricingCard";
+import { PricingCard } from "./_components/PricingCard/PricingCard";
 
-export default function Pricing() {
+export function Pricing() {
   const [value, setValue] = useState("Organizations");
   const [isShowingAnnual, setIsShowingAnnual] = useState(true);
 
@@ -47,7 +47,6 @@ export default function Pricing() {
           All associated fees are covered by the bounty creator.
         </small>
       </Group>
-      {/* TODO: Explain Free Tier  */}
 
       <Center style={{ paddingBottom: '5rem' }}>
         <SegmentedControl

@@ -1,11 +1,8 @@
 import { Tooltip } from "@mantine/core";
 import styles from "./styles.module.css";
 import { IconInfoCircle } from "@tabler/icons-react";
-
-interface Price {
-    value: number;
-    unit: 'USD' | 'USD_CENT';
-}
+import { Price } from "@/app/(web)/_shared/_types/Price";
+import { formatPrice } from "@/app/(web)/_shared/_utils/formatPrice";
 
 export function KpiPrice({
     title,
@@ -40,23 +37,4 @@ export function KpiPrice({
             </div>
         </article>
     );
-}
-
-
-function formatPrice(price: Price): string {
-    if (price.unit === 'USD_CENT') {
-        return formatPriceFromCents(price.value);
-    }
-
-    return formatPriceFromUsd(price.value);
-
-    function formatPriceFromUsd(usd: number): string {
-        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(usd);
-    }
-
-    function formatPriceFromCents(price: number): string {
-        const usd = price / 100;
-
-        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(usd);
-    }
 }

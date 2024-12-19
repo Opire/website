@@ -9,6 +9,7 @@ import { Community } from "./_components/Community/Community";
 import { ContinuousImprovement } from "./_components/ContinuousImprovement/ContinuousImprovement";
 import { Growth, KPIs } from "./_components/Growth/Growth";
 import { Metadata } from "next";
+import { CONFIG } from "../_shared/config";
 
 export const metadata: Metadata = {
   title: "Opire - Open Startup",
@@ -63,8 +64,8 @@ export const metadata: Metadata = {
   }
 };
 
-export default async function OpenStartup() {
-  const kpis: KPIs = await fetch(`https://api.opire.dev/analytics/kpis`).then((res) => res.json());
+export default async function OpenStartupPage() {
+  const kpis: KPIs = await fetch(`${CONFIG.OPIRE_API_URL}/analytics/kpis`).then((res) => res.json());
 
   return (
     <div className={styles.page}>

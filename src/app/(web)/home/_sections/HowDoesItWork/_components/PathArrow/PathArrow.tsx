@@ -6,7 +6,7 @@ import PathArrowImage1 from '../../../../../../../../public/assets/illustrations
 import PathArrowImage2 from '../../../../../../../../public/assets/illustrations/path-arrow-2.svg'
 import clsx from "clsx";
 
-export default function PathArrow({
+export function PathArrow({
     direction,
     variant = 1,
 }: {

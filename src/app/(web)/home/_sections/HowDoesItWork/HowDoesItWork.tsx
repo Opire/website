@@ -3,10 +3,10 @@ import Step1 from '../../../../../../public/assets/illustrations/step-1.svg'
 import Step2 from '../../../../../../public/assets/illustrations/step-2.svg'
 import Step3 from '../../../../../../public/assets/illustrations/step-3.svg'
 import Step4 from '../../../../../../public/assets/illustrations/step-4.svg'
-import PathArrow from "./_components/PathArrow/PathArrow";
-import Step from "./_components/Step/Step";
+import { PathArrow } from "./_components/PathArrow/PathArrow";
+import { Step } from "./_components/Step/Step";
 
-export default function HowDoesItWork() {
+export function HowDoesItWork() {
   return (
     <section id="how-does-it-work" className={styles.section}>
       <div className={styles["title-container"]}>

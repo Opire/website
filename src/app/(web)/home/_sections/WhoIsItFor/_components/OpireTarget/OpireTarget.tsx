@@ -4,7 +4,7 @@ import NextImage from 'next/image';
 import styles from "./styles.module.css";
 import { ReactNode } from "react";
 
-export default function OpireTarget({
+export function OpireTarget({
     title,
     description,
     icon,

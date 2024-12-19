@@ -3,8 +3,10 @@ import styles from "./styles.module.css";
 import { IconCheck, IconX } from "@tabler/icons-react";
 import clsx from "clsx";
 import { OPButton } from "@/app/(web)/_shared/_components/Button/OPButton";
+import { Price } from "@/app/(web)/_shared/_types/Price";
+import { formatPrice } from "@/app/(web)/_shared/_utils/formatPrice";
 
-export default function PricingCard({
+export function PricingCard({
   price,
   anualPrice,
   saving,
@@ -14,8 +16,8 @@ export default function PricingCard({
   isAnnual = false,
   onToggleAnnual,
 }: {
-  price: number;
-  anualPrice: number;
+  price: Price;
+  anualPrice: Price;
   saving: string;
   name: string;
   planFeatures: {
@@ -27,6 +29,13 @@ export default function PricingCard({
   onToggleAnnual: (newValue: boolean) => void;
 }) {
   const currentPrice = isAnnual ? anualPrice : price;
+
+  function getMonthlyPrice() {
+    return formatPrice({
+      value: currentPrice.value / (isAnnual ? 12 : 1),
+      unit: currentPrice.unit
+    })
+  }
 
   return (
     <div
@@ -48,7 +57,7 @@ export default function PricingCard({
               &nbsp; &nbsp; ({saving})
             </>}
           </div>
-          <h2 className={styles.price}>{formatPrice(currentPrice / (isAnnual ? 12 : 1))} / month</h2>
+          <h2 className={styles.price}>{getMonthlyPrice()} / month</h2>
         </div>
         <Switch
           checked={isAnnual}
@@ -91,11 +100,4 @@ export default function PricingCard({
       </div> */}
     </div>
   );
-}
-
-function formatPrice(price: number) {
-  return (price / 100).toLocaleString("en-US", {
-    style: "currency",
-    currency: "USD",
-  });
 }

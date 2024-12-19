@@ -1,6 +1,6 @@
-export type FaqGroup = "General" | "Payments" | "Bounties" | "Tips" | "Pricing";
+export type FaqGroupType = "General" | "Payments" | "Bounties" | "Tips" | "Pricing";
 
-export const FAQ_GROUPS: FaqGroup[] = ["General", "Payments", "Bounties", "Tips", "Pricing"];
+export const FAQ_GROUPS: FaqGroupType[] = ["General", "Payments", "Bounties", "Tips", "Pricing"];
 
 export interface Faq {
     id: string;
@@ -274,8 +274,8 @@ const pricingFaqs: Faq[] = [
     }
 ]
 
-type FaqCategory = {
-    [K in FaqGroup]: Faq[];
+export type FaqCategory = {
+    [K in FaqGroupType]: Faq[];
 };
 
 export const FAQs: FaqCategory = {

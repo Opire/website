@@ -1,8 +1,35 @@
-export const ORGANIZATION_PRICING_PLANS = [
+import { Price } from "@/app/(web)/_shared/_types/Price";
+
+interface PRICING_PLAN_TYPE {
+    price: Price,
+    anualPrice: Price,
+    saving: '2 months saving',
+    isHighlighted: boolean,
+    planFeatures: {
+        hasFeature: boolean,
+        description: string,
+    }[],
+}
+
+interface ORGANIZATION_PRICING_PLAN_TYPE extends PRICING_PLAN_TYPE {
+    name: "Starter Tier" | "Pro Tier" | "Enterprise Tier",
+}
+
+interface INDIVIDUAL_PRICING_PLAN_TYPE extends PRICING_PLAN_TYPE {
+    name: "Individual Starter" | "Individual Pro",
+}
+
+export const ORGANIZATION_PRICING_PLANS: ORGANIZATION_PRICING_PLAN_TYPE[] = [
     {
         name: "Starter Tier",
-        price: 1999,
-        anualPrice: 19999,
+        price: {
+            value: 1999,
+            unit: 'USD_CENT'
+        },
+        anualPrice: {
+            value: 19999,
+            unit: 'USD_CENT'
+        },
         saving: '2 months saving',
         isHighlighted: false,
         planFeatures: [
@@ -11,8 +38,14 @@ export const ORGANIZATION_PRICING_PLANS = [
     },
     {
         name: "Pro Tier",
-        price: 3999,
-        anualPrice: 39999,
+        price: {
+            value: 3999,
+            unit: 'USD_CENT'
+        },
+        anualPrice: {
+            value: 39999,
+            unit: 'USD_CENT'
+        },
         saving: '2 months saving',
         isHighlighted: true,
         planFeatures: [
@@ -23,8 +56,14 @@ export const ORGANIZATION_PRICING_PLANS = [
     },
     {
         name: "Enterprise Tier",
-        price: 19999,
-        anualPrice: 199999,
+        price: {
+            value: 19999,
+            unit: 'USD_CENT'
+        },
+        anualPrice: {
+            value: 199999,
+            unit: 'USD_CENT'
+        },
         saving: '2 months saving',
         isHighlighted: false,
         planFeatures: [
@@ -37,11 +76,17 @@ export const ORGANIZATION_PRICING_PLANS = [
     },
 ]
 
-export const INDIVIDUAL_PRICING_PLANS = [
+export const INDIVIDUAL_PRICING_PLANS: INDIVIDUAL_PRICING_PLAN_TYPE[] = [
     {
         name: "Individual Starter",
-        price: 499,
-        anualPrice: 4999,
+        price: {
+            value: 499,
+            unit: 'USD_CENT'
+        },
+        anualPrice: {
+            value: 4999,
+            unit: 'USD_CENT'
+        },
         saving: '2 months saving',
         isHighlighted: false,
         planFeatures: [
@@ -51,8 +96,14 @@ export const INDIVIDUAL_PRICING_PLANS = [
     },
     {
         name: "Individual Pro",
-        price: 1499,
-        anualPrice: 14999,
+        price: {
+            value: 1499,
+            unit: 'USD_CENT'
+        },
+        anualPrice: {
+            value: 14999,
+            unit: 'USD_CENT'
+        },
         saving: '2 months saving',
         isHighlighted: true,
         planFeatures: [

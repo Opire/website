@@ -1,10 +1,8 @@
-import {
-    Group,
-} from "@mantine/core";
 import styles from "./styles.module.css";
 import { OPButton } from "@/app/(web)/_shared/_components/Button/OPButton";
+import { CONFIG } from "@/app/(web)/_shared/config";
 
-export default function CommunityBanner() {
+export function CommunityBanner() {
 
     return (
         <section id="community" className={styles.section}>
@@ -23,7 +21,7 @@ export default function CommunityBanner() {
                     <OPButton
                         variant="secondary"
                         size="big"
-                        href="https://discord.gg/Rfq8CMZH4b"
+                        href={CONFIG.DISCORD_LINK}
                         target="_blank"
                     >
                         Join Our Discord

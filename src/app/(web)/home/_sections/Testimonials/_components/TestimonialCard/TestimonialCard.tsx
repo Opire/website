@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { Testimonial } from "../../_data/TESTIMONIALS_DATA";
 import { IconBrandGithubFilled, IconBrandTwitterFilled } from "@tabler/icons-react";
 
-export default function TestimonialCard({
+export function TestimonialCard({
   testimonial: {
     comment,
     fullname,

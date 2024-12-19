@@ -6,6 +6,7 @@ import NextImage from 'next/image';
 import BigLogo from "../../../../../../../../public/assets/big_logo.svg";
 import { OPButton } from "../../../Button/OPButton";
 import { HEADER_MENU } from "../_data/HEADER_MENU";
+import { CONFIG } from "@/app/(web)/_shared/config";
 
 export function HeaderDesktop() {
 
@@ -38,7 +39,7 @@ export function HeaderDesktop() {
                     ENG
                 </OPButton> */}
                 <OPButton
-                    href="https://app.opire.dev"
+                    href={CONFIG.OPIRE_APP_URL}
                     target="_blank"
                 >
                     SEE REWARDS

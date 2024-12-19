@@ -7,9 +7,9 @@ import WhoIsItForBulbIllustration from "../../../../../../public/assets/illustra
 import WhoIsItForStarIllustration from "../../../../../../public/assets/illustrations/who-is-it-for-star.svg";
 
 import styles from "./styles.module.css";
-import OpireTarget from "./_components/OpireTarget/OpireTarget";
+import { OpireTarget } from "./_components/OpireTarget/OpireTarget";
 
-export default function WhoIsItFor() {
+export function WhoIsItFor() {
   return (
     <section id="who-is-it-for" className={styles.section}>
       <Group className={styles.titleSection}>

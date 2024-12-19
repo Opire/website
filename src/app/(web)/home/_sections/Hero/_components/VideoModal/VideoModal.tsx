@@ -1,5 +1,4 @@
 import { Modal } from "@mantine/core";
-import styles from "./styles.module.css";
 
 export function VideoModal({
     isOpen,

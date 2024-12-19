@@ -4,7 +4,7 @@ import NextImage from "next/image";
 import clsx from "clsx";
 import { ReactNode } from "react";
 
-export default function Step({
+export function Step({
     title,
     description,
     stepNumber,

@@ -4,7 +4,7 @@ import { Footer } from "../_shared/_components/Footer/Footer";
 import { LogoMask } from "../home/_sections/Hero/_components/LogoMask/LogoMask";
 import { Container } from "../_shared/_components/Container/Container";
 
-export default function PrivacyPolicyPage() {
+export default function TermsOfServicePage() {
   return (
     <div className={styles.page}>
       <Header />

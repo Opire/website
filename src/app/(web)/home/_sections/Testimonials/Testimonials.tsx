@@ -1,9 +1,9 @@
 import { Group } from "@mantine/core";
 import styles from "./styles.module.css";
-import TestimonialCard from "./_components/TestimonialCard/TestimonialCard";
+import { TestimonialCard } from "./_components/TestimonialCard/TestimonialCard";
 import { TESTIMONIALS } from "./_data/TESTIMONIALS_DATA";
 
-export default function Testimonials() {
+export function Testimonials() {
   return (
     <section id="testimonials" className={styles.section}>
       <Group className={styles["title-container"]}>

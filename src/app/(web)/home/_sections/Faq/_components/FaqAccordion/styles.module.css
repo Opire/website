@@ -17,6 +17,15 @@
     border-radius: var(--radius-md);
     color: var(--color-gray-1);
     background: transparent !important;
+    display: none;
+}
+
+.firstFaq {
+    margin-top: 0px !important;
+}
+
+.visible {
+    display: block;
 }
 
 .faq-title {

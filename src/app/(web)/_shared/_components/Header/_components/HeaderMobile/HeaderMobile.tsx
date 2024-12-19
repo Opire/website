@@ -11,6 +11,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import { OPButton } from "../../../Button/OPButton";
 import { HEADER_MENU } from "../_data/HEADER_MENU";
+import { CONFIG } from "@/app/(web)/_shared/config";
 
 export function HeaderMobile() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,7 +60,7 @@ export function HeaderMobile() {
                         ENG
                     </OPButton> */}
                     <OPButton
-                        href="https://app.opire.dev"
+                        href={CONFIG.OPIRE_APP_URL}
                         target="_blank"
                     >
                         SEE REWARDS

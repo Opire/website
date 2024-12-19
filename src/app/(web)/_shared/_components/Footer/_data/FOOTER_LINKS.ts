@@ -1,3 +1,5 @@
+import { CONFIG } from "../../../config";
+
 interface Link {
     text: string;
     href: string;
@@ -45,17 +47,17 @@ export const FOOTER_LINKS: FooterGroupType[] = [
         links: [
             {
                 text: "Discord",
-                href: "https://discord.gg/Rfq8CMZH4b",
+                href: CONFIG.DISCORD_LINK,
                 target: "_blank",
             },
             {
                 text: "Reddit",
-                href: "https://www.reddit.com/r/opire",
+                href: CONFIG.REDDIT_LINK,
                 target: "_blank",
             },
             {
                 text: "Twitter",
-                href: "https://twitter.com/opire_dev",
+                href: CONFIG.TWITTER_LINK,
                 target: "_blank",
             },
         ],
@@ -111,12 +113,12 @@ export const FOOTER_LINKS: FooterGroupType[] = [
             },
             {
                 text: "Contact Us",
-                href: "mailto:team@opire.dev",
+                href: `mailto:${CONFIG.OPIRE_EMAIL}`,
                 target: "_blank",
             },
             {
                 text: "Ko-fi",
-                href: "https://ko-fi.com/opire",
+                href: CONFIG.KOFI_LINK,
                 target: "_blank",
             },
         ]
@@ -126,17 +128,17 @@ export const FOOTER_LINKS: FooterGroupType[] = [
         links: [
             {
                 text: "Docs",
-                href: "https://docs.opire.dev",
+                href: CONFIG.OPIRE_DOCS_URL,
                 target: "_blank",
             },
             {
                 text: "GitHub",
-                href: "https://github.com/opire",
+                href: CONFIG.GITHUB_LINK,
                 target: "_blank",
             },
             {
                 text: "LinkedIn",
-                href: "https://www.linkedin.com/company/opire",
+                href: CONFIG.LINKEDIN_LINK,
                 target: "_blank",
             },
         ]
