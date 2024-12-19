@@ -11,8 +11,6 @@
 }
 
 .title-container {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 4rem;
 }
 
@@ -23,6 +21,7 @@
   text-align: center;
   color: var(--color-white);
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .testimonials {
