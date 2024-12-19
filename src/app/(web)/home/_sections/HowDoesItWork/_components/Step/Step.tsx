@@ -19,7 +19,7 @@ export function Step({
 }) {
     return (
         <div className={clsx(styles.step, styles[`step--${position}`])}>
-            <Image component={NextImage} src={icon} alt={`step ${stepNumber}`} className={styles["step-icon"]} />
+            <Image component={NextImage} src={icon} alt={`step ${stepNumber}`} className={styles["step-icon"]} width={53} height={53} />
 
             <h2 className={styles["step-title"]}>{title}</h2>
             <p className={styles["step-description"]}>

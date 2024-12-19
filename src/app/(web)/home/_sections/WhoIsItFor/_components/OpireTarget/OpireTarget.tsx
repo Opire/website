@@ -17,7 +17,7 @@ export function OpireTarget({
 }) {
     return (
         <div className={styles.target}>
-            <Image component={NextImage} src={icon} alt={iconAlt} className={styles["target-icon"]} />
+            <Image component={NextImage} src={icon} alt={iconAlt} className={styles["target-icon"]} width={50} height={50} />
             <div className={styles["target-text"]}>
                 <h2 className={styles["target-title"]}>{title}</h2>
                 <p className={styles["target-description"]}>

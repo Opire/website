@@ -33,8 +33,8 @@
   padding: 40px 40px 60px 40px;
   gap: 32px;
   border-radius: var(--radius-md);
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   padding-bottom: 4rem;
   gap: 0px;
   background: linear-gradient(180deg, var(--color-gray-9) 0%, var(--color-opacity-0) 100%);
