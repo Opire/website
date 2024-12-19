@@ -24,6 +24,9 @@ export function PathArrow({
                 styles[`icon-${variant}`],
                 styles[`icon-${variant}--${direction}`],
             )}
+            w={308.02}
+            h={174.35}
+            fit="contain"
         />
     );
 }
