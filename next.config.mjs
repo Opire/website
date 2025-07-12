@@ -28,6 +28,21 @@ const nextConfig = {
                 destination: '/home',
                 permanent: true,
             },
+            {
+                source: '/for-devs',
+                destination: '/home',
+                permanent: true,
+            },
+            {
+                source: '/for-code-owners',
+                destination: '/home',
+                permanent: true,
+            },
+            {
+                source: '/for-reward-creators',
+                destination: '/home',
+                permanent: true,
+            }
         ]
     },
 };
